@@ -47,6 +47,7 @@ jobs:
           echo "$HEXO_DEPLOY_PRI" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan github.com >> ~/.ssh/known_hosts
+          ssh -T git@github.com
           git config --global user.name $GIT_USER
           git config --global user.email $GIT_EMAIL
 
@@ -56,4 +57,4 @@ jobs:
 
       - name: Deploy hexo
         run: |
-          npm run deploy
+          npm run deploy --generate
