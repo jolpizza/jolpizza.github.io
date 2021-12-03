@@ -104,4 +104,3 @@ theme: Acetolog
 deploy:
   type: git
   repo: git@jolpizza:jolpizza/jolpizza.github.io.git
-  branch: master
