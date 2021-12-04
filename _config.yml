@@ -11,6 +11,10 @@ author: jolpizza
 language: en
 timezone: ''
 
+# hexo-graphviz
+graphviz:
+  enable: true
+
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://jolpizza.github.io
@@ -98,6 +102,11 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: Acetolog
+theme_config:
+  avatar: https://avatars.githubusercontent.com/u/95454811?s=400&v=4
+  # hexo-graphviz
+  graphviz:
+    enable: true
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
