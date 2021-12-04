@@ -26,13 +26,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Checkout theme repo
-        uses: actions/checkout@v2
-        with:
-          repository: ${{ env.THEME_REPO }}
-          ref: ${{ env.THEME_BRANCH }}
-          path: themes/Acetolog
-
       - name: Use Node.js ${{ matrix.node_version }}
         uses: actions/setup-node@v1
         with:
@@ -47,6 +40,7 @@ jobs:
           echo "$HEXO_DEPLOY_PRI" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan github.com >> ~/.ssh/known_hosts
+          echo -e "Host jolpizza\n   HostName github.com\n   User git\n   IdentityFile ~/.ssh/id_rsa\n" >> ~/.ssh/config
 
           git config --global user.name $GIT_USER
           git config --global user.email $GIT_EMAIL
