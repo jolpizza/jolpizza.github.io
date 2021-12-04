@@ -103,6 +103,7 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: Acetolog
 theme_config:
+  bio: jolpizza's blog
   avatar: https://avatars.githubusercontent.com/u/95454811?s=400&v=4
   # hexo-graphviz
   graphviz:
