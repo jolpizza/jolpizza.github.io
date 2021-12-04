@@ -8,7 +8,7 @@ on:
 env:
   GIT_USER: jolpizza
   GIT_EMAIL: joeylovepizzatoo@gmail.com
-  THEME_REPO: iGuan7u/Acetolog
+  THEME_REPO: jolpizza/Acetolog
   THEME_BRANCH: master
   DEPLOY_REPO: jolpizza/jolpizza.github.io
   DEPLOY_BRANCH: master
@@ -48,8 +48,6 @@ jobs:
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan github.com >> ~/.ssh/known_hosts
           echo -e "Host jolpizza\n   HostName github.com\n   User git\n   IdentityFile ~/.ssh/id_rsa\n" >> ~/.ssh/config
-
-          echo "$GRAPHVIZ_FOOTER_CODE" >> ~/work/jolpizza.github.io/jolpizza.github.io/themes/Acetolog/layout/includes/footer.swig
 
           git config --global user.name $GIT_USER
           git config --global user.email $GIT_EMAIL
