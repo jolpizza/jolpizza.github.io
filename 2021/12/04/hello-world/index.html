@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Build a Blog with Hexo and Github Pages</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2.0">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="manifest" href="/site.webmanifest">
+
+        
+    
+    <link rel='stylesheet' href="/./css/dracula.css">
+
+    <meta name="generator" content="Hexo 5.4.0"></head>
+    <body>
+        <header class="al_header al_pos_fixed">
+    <div class="al_header_container dis_flex_jcenter">
+        <div class="al_header_container_left">
+            <div class="al_header_site_title">
+                <a href="/">jolpizza</a>
+            </div>
+        </div>
+
+        <div class="dis_flex_jcenter">
+            <div class="al_header_setting">
+                <svg class="al_header_icon">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-menu"></use>
+                </svg>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <div class="al_sidebar">
+
+    <div class="al_sidebar_overlay al_full_cover"></div>
+
+    <div class="al_pos_fixed al_sidebar_cnt">
+        <div class="dis_flex_acenter al_sidebar_header">
+            <h3>jolpizza</h3>
+            <div class="al_sidebar_close al_header_setting">
+                <svg class="al_header_icon">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-close"></use>
+                </svg>
+            </div>
+        </div>
+
+        <div class="al_sidebar_author_cnt">
+
+            <div class="al_sidebar_author_info">
+                <h4>jolpizza</h4>
+                <img class="al_sidebar_avatar" src="https://avatars.githubusercontent.com/u/95454811?s=400&v=4">
+                <p></p>
+            </div>
+
+            
+        </div>
+    </div>
+</div>
+
+        
+    <div class="dis_flex_center al_lightbox_cnt al_full_cover">
+        <img class="al_lightbox_img"/>
+    </div>
+    <div class="al_page_background dis_flex_center al_full_cover"></div>
+    <div class="al_page_container">
+        <div class="al_pos_ab al_fake_background"></div>
+        <div class="al_main_container al_shadow al_main_page_container">
+            <article class="al_article">
+                <header>
+                    <h1 class="al_page_title">
+                        Build a Blog with Hexo and Github Pages
+                    </h1>
+                    <div class="al_page_info dis_flex">
+                        <div class="al_page_content_info">
+                            Sat December 4, 2021 10:40 AM
+                        </div>
+
+                        
+
+                        
+                        <span class="tags"></span>
+                    </div>
+                </header>
+
+                
+                    <div class="al_page_content_outline">
+                        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Install"><span class="toc-text">Install</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Setup"><span class="toc-text">Setup</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Configuration"><span class="toc-text">Configuration</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Hexo-%E5%92%8C-Theme-%E9%85%8D%E7%BD%AE"><span class="toc-text">Hexo 和 Theme 配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Github-%E9%85%8D%E7%BD%AE"><span class="toc-text">Github 配置</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Deploy"><span class="toc-text">Deploy</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Source"><span class="toc-text">Source</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%9A%E5%AE%A2%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6"><span class="toc-text">博客静态文件</span></a></li></ol></li></ol>
+                    </div>
+                
+
+                
+                <section id="post-body">
+                    <p>使用 Hexo 创建一个博客需要4大步骤。前3步骤不赘述，相关问题搜索引擎都能搞定。我踩坑最多的是最后一步，所以这里就分享下最后一步遇到的问题。</p>
+<div><div class="graphviz">digraph steps_build_a_blog_with_hexo_github_pages {
+    rankdir=LR;
+    size="8,5"
+    node [shape = doublecircle]; 0 3;
+    node [shape = circle];
+    
+<pre><code>0 [label=&quot;Install&quot;];
+1 [label=&quot;Setup&quot;];
+2 [label=&quot;Configuration&quot;];
+3 [label=&quot;Deploy&quot;];
+
+
+0 -&gt; 1;
+1 -&gt; 2;
+2 -&gt; 3;
+</code></pre>
+<p>}</div></div></p>
+<h2 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h2><p>需要安装的软件列表：</p>
+<ul>
+<li>Git</li>
+<li>NPM</li>
+<li>Hexo</li>
+</ul>
+<h2 id="Setup"><a href="#Setup" class="headerlink" title="Setup"></a>Setup</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init blog</span><br><span class="line"><span class="built_in">cd</span> blog</span><br><span class="line">npm install</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+
+<h2 id="Configuration"><a href="#Configuration" class="headerlink" title="Configuration"></a>Configuration</h2><h3 id="Hexo-和-Theme-配置"><a href="#Hexo-和-Theme-配置" class="headerlink" title="Hexo 和 Theme 配置"></a>Hexo 和 Theme 配置</h3><h3 id="Github-配置"><a href="#Github-配置" class="headerlink" title="Github 配置"></a>Github 配置</h3><h2 id="Deploy"><a href="#Deploy" class="headerlink" title="Deploy"></a>Deploy</h2><p>前3大步骤顺利的情况下，博客系统就可以在本地被测试了。为了上线这个博客系统，还需要了解Hexo是怎么配合Github部署博客。</p>
+<p>默认情况下，<code>hexo deploy</code>命令只会部署博客的源文件到Github仓库上。本地的博客静态文件并没有部署到Github仓库中。这就导致使用<code>hexo deploy</code>命令并不能完成博客静态文件的部署，那么浏览器中也就无法访问博客。</p>
+<p>所以，实际的部署分两步骤：</p>
+<ol>
+<li>博客的源文件部署</li>
+<li>Github根据博客的源文件自动生成一个博客静态文件的分支，根据博客仓的设置将仓的Github Pages指向这个分支。</li>
+</ol>
+<h3 id="Source"><a href="#Source" class="headerlink" title="Source"></a>Source</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m &quot;change log&quot;</span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
+
+<h3 id="博客静态文件"><a href="#博客静态文件" class="headerlink" title="博客静态文件"></a>博客静态文件</h3><p>那么Github如何根据源文件自动生成一个博客静态文件的分支呢？答案是使用<a target="_blank" rel="noopener" href="https://github.com/features/actions">Github Actions</a>。当Github根据博客的源文件自动生成一个博客静态文件的分支时，自然就不需要依赖本地机器上生成的静态文件了。</p>
+<p>为了让Github为我们自动完成分支的生成和提交，需要在<code>./.github/</code>下创建一个目录<code>./.github/workflows</code>，并在这个目录下创建一个自动化任务<code>./.github/workflows/pages.yml</code>。</p>
+
+                </section>
+
+                
+                
+                
+
+            </article>
+
+            
+            <nav class="dis_flex al_post_nav">
+                <a class="al_post_nav_item dis_flex_acenter" href="/2021/12/09/reportlab-japanese-support/">
+                    
+                        <svg class="al_arrow">
+                            <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-arrow-left"></use>
+                        </svg>
+                        <span class="al_text_ellipsis al_post_nav_desc">ReportLab Japanese Support</span>
+                    
+                </a>
+                <a class="al_post_nav_item dis_flex_acenter" href="/">
+                    
+                </a>
+            </nav>
+        </div>
+    </div>
+
+
+        <div class="al_index_footer dis_flex_center">
+    <div class="al_index_footer_item al_index_footer_title">
+        jolpizza
+    </div>
+
+    
+    
+
+    <div class="al_index_footer_item al_index_footer_extra">
+        Created By 
+        <a target="_blank" rel="noopener" href="https://github.com/iGuan7u/Acetolog">AcetoLog</a>
+         · Power By 
+        <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>
+    </div>
+
+    <div class="al_index_footer_item al_index_footer_extra_right">
+        All Right Reserved
+    </div>
+</div>
+
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/viz.js/1.7.1/viz.js'></script>
+  <script>
+    String.prototype.replaceAll = function(search, replacement) {
+      var target = this;
+      return target.split(search).join(replacement);
+    };
+
+    let vizObjects = document.querySelectorAll('.graphviz')
+
+    for (let item of vizObjects) {
+      let svg = undefined
+      try {
+        svg = Viz(item.textContent.replaceAll('–', '--'), 'svg')
+      } catch(e) {
+        svg = `<pre class="error">${e}</pre>`
+      }
+      item.outerHTML = svg
+    }
+  </script>
+
+        <script type="text/javascript" async="async" src="/javascripts/acelog.js"></script>
+        
+        
+        
+        
+        
+    </body>
+</html>
+        
