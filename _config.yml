@@ -11,6 +11,12 @@ author: jolpizza
 language: en
 timezone: ''
 
+# Google Analytics
+google_analytics:
+  tracking_id: G-M5SVRFSR84
+  localhost_ignored: true
+
+
 # hexo-graphviz
 graphviz:
   enable: true
