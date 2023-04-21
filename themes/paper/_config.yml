@@ -20,6 +20,14 @@ scripts_defer:
 - /js/paper.js # for basic script
 
 
+math:
+  engine: 'mathjax'
+  every_page: true
+  mathjax:
+    enable: true
+    cdn: https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML
+
+
 social:
   Github: https://github.com/jolpizza
 
