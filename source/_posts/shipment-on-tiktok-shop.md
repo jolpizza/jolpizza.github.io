@@ -31,7 +31,7 @@ tags:
 
 以我所在地区为例，我是 2021-11-3 后入驻的，我填写（更新）仓库地址并没有自动发起揽收申请。我通过电话和 QQ 客服联系了万色客服。客服确认我地址在揽收范围内后，通知我在 TikTok Shop 后台更新仓库地址（我的账号 - 卖家资料 - 仓库地址），然后万色客服那边开始审核我的揽收请求，这时我的仓库地址下方出现”揽收暂未开通“提示。一会儿，这个提示就变成了”支持揽收“。
 
-![apply-for-pickup-success](/images/shipment-on-tiktok-shop/apply-for-pickup-success.png)
+![apply-for-pickup-success](shipment-on-tiktok-shop/apply-for-pickup-success.png)
 
 首次揽收需要提前一天预约（T+1），TikTok 官方提示在将包裹交给揽收方的时候，一定要当面和司机确认数量，最好是确认快递员扫描完成。
 

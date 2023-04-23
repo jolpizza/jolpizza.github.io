@@ -72,3 +72,7 @@ git push
 
 为了让Github为我们自动完成分支的生成和提交，需要在`./.github/`下创建一个目录`./.github/workflows`，并在这个目录下创建一个自动化任务`./.github/workflows/pages.yml`。
 
+
+### 如何插入和引用图片
+
+参考[这篇博客](https://liolok.com/how-to-add-image-to-hexo-blog-post/)设置即可。
