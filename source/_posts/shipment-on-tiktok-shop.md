@@ -42,8 +42,8 @@ tags:
 ## 整个流程跟踪
 
 - 0H，收到邮件提示有需要处理的订单
-- 4H，打印货物清单和面单，完成包装，这时候我以为 TikTok 会自动通知万色来揽收，结果就是不能。具体操作看“上门揽收”。
+- 4H，打印货物清单和面单，完成包装，这时候我以为 TikTok 会自动通知万色来揽收，结果就是不能。具体操作看“上门揽收”。****
 - 8H，我用顺丰自寄送到 TikTok 支持的分拨中心。
 - 20H，分拨中心已经确认签收，从此开始需要等 24 小时内订单才会变成“已发货”。这天已经到达分拣中心，只是推送信息没有同步到 TikTok Shop 后台。
 
-![timestamp-of-complete-process-of-shipping-on-tiktok](shipment-on-tiktok-shop\timestamp-of-complete-process-of-shipping-on-tiktok.png)
+![timestamp-of-complete-process-of-shipping-on-tiktok](shipment-on-tiktok-shop/timestamp-of-complete-process-of-shipping-on-tiktok.png)
